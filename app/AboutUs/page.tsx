@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import bg_img from "../public/bg_img.jpg";
+import bg_img from "../../public/bg_img.jpg";
 import bg_img2 from "../public/bg_img2.jpeg";
 import bg_img3 from "../public/bg_img3.jpeg";
 import forward from "../public/Forward.png";
@@ -10,7 +10,7 @@ import car from "../public/car.png";
 import car_new from "../public/car_new.png";
 import car_new2 from "../public/car_new2.png";
 import car2 from "../public/car2.png";
-import logo from "../public/logo.png";
+import logo from "../../public/logo.png";
 import React, { useState, useEffect } from "react";
 import { Header } from "@/components/Header";
 import Service from "@/components/Service";
@@ -159,6 +159,7 @@ export default function Home() {
           </div>
         </div>
         
+        
         {/* Right Content - Image */}
         <div className="w-full lg:w-1/2 relative min-h-[50vh] lg:min-h-[90vh]">
           <Image
@@ -172,10 +173,43 @@ export default function Home() {
           />
           
           {/* Overlay for better text contrast if needed */}
-          <div className="absolute inset-0 bg-gradient-to-r from-transparent to-white opacity-10 lg:hidden"></div>
+          
         </div>
       </section>
     </div>
+          <section
+        className=" bg-gray-100 flex flex-col "
+        ref={ref}
+      >
+        <div className="flex items-center justify-center gap-2 pt-20">
+        </div>
+        <div className="grid grid-cols-1 lg:grid-cols-3 px-[5.313vw]">
+          {Stats.map((data, index) => (
+            <div key={index} className="flex flex-col items-center gap-6 py-3">
+              <Image
+                src={data.img}
+                alt="img"
+                className="w-12 h-12 lg:w-32 lg:h-32 md:w-24 md:h-24"
+              />
+              <CountUp
+                start={0}
+                end={data.count}
+                delay={0}
+                duration={3.0}
+                useEasing={true}
+                key={inView ? 1 : 0}
+              >
+                {({ countUpRef }) => (
+                  <h1 className="text-black md:text-8xl text-4xl font-bold">
+                    <span ref={countUpRef} />
+                  </h1>
+                )}
+              </CountUp>
+              <p className="text-gray-800">{data.title}</p>
+            </div>
+          ))}
+        </div>
+      </section>
       <section className="">
         
         <Intro />
