@@ -1065,6 +1065,11 @@ execa@^7.0.0:
     signal-exit "^3.0.7"
     strip-final-newline "^3.0.0"
 
+fast-equals@^5.2.2:
+  version "5.2.2"
+  resolved "https://registry.yarnpkg.com/fast-equals/-/fast-equals-5.2.2.tgz#885d7bfb079fac0ce0e8450374bce29e9b742484"
+  integrity sha512-V7/RktU11J3I36Nwq2JnZEM7tNm17eBJz+u25qdxBZeCKiX6BkVSZQjwWIr+IobgnZy+ag73tTZgZi7tr0LrBw==
+
 fast-glob@^3.2.12, fast-glob@^3.3.0, fast-glob@^3.3.2:
   version "3.3.2"
   resolved "https://registry.yarnpkg.com/fast-glob/-/fast-glob-3.3.2.tgz#a904501e57cfdd2ffcded45e99a54fef55e46129"
@@ -1207,6 +1212,11 @@ ieee754@^1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/ieee754/-/ieee754-1.2.1.tgz#8eb7a10a63fff25d15a57b001586d177d1b0d352"
   integrity sha512-dcyqhDvX1C46lXZcVqCpK+FtMRQVdIMN6/Df5js2zouUsqG7I6sFxitIC+7KYK29KdXOLHdu9zL4sFnoVQnqaA==
+
+immer@^10.1.1:
+  version "10.1.1"
+  resolved "https://registry.yarnpkg.com/immer/-/immer-10.1.1.tgz#206f344ea372d8ea176891545ee53ccc062db7bc"
+  integrity sha512-s2MPrmjovJcoMaHtx6K11Ra7oD05NT97w1IC5zpMkT6Atjr7H8LjaDd81iIxUYpMKSRRNMJE703M1Fhr/TctHw==
 
 import-fresh@^3.3.0:
   version "3.3.0"
@@ -1734,6 +1744,14 @@ prompts@^2.4.2:
   dependencies:
     kleur "^3.0.3"
     sisteransi "^1.0.5"
+
+pullstate@^2.0.0-pre.6:
+  version "2.0.0-pre.6"
+  resolved "https://registry.yarnpkg.com/pullstate/-/pullstate-2.0.0-pre.6.tgz#43947abfdcc5d69f0f53fe03f2ce54d650c4cc3c"
+  integrity sha512-F/RtJmymGRTIFvJ/Hh+2JC+MZYb+uD7R5fnChx5NVOw7r3MqPG1srrX05yJ8oY1LC1gceIoEM3ljoct+Tx/ZKw==
+  dependencies:
+    fast-equals "^5.2.2"
+    immer "^10.1.1"
 
 queue-microtask@^1.2.2:
   version "1.2.3"
