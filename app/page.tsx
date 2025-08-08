@@ -1,0 +1,323 @@
+"use client";
+import Image from "next/image";
+import bg_img from "../public/bg_img.jpg";
+import bg_img2 from "../public/bg_img2.jpeg";
+import bg_img3 from "../public/bg_img3.jpeg";
+import forward from "../public/Forward.png";
+import car_small from "../public/car_small.png";
+import car_large from "../public/car_large.png";
+import car from "../public/car.png";
+import car_new from "../public/car_new.png";
+import car_new2 from "../public/car_new2.png";
+import car2 from "../public/car2.png";
+import logo from "../public/logo.png";
+import React, { useState, useEffect } from "react";
+import { Header } from "@/components/Header";
+import Services from "@/components/Services";
+import about from "../public/about.png";
+import { About_data } from "@/components/Data/About_Data";
+import { Stats } from "@/components/Data/We_Are_Data";
+import HowItWorks from "@/components/HowItWorks";
+import Reviews from "@/components/Reviews";
+import Brands from "@/components/Brands";
+import PopupForm from "@/components/PopupForm";
+import Faqs from "@/components/Faqs";
+import CountUp from "react-countup";
+import { Footer } from "@/components/Footer";
+import { useInView } from "react-intersection-observer";
+import { Button_Component } from "@/components/Button_Component";
+
+export default function Home() {
+  const [scrolled, setIsScrolled] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      if (scrollPosition > 100) {
+        // Adjust this value as needed
+        setIsScrolled(true);
+        setIsVisible(false);
+      } else {
+        setIsScrolled(false);
+        setIsVisible(true);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    // Clean up the event listener
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+
+  const openPopup = () => setIsPopupOpen(true);
+  const closePopup = () => setIsPopupOpen(false);
+
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
+  return (
+    <main>
+      
+      <div
+        className={`
+    flex gap-5 items-center z-20 fixed 
+    bottom-4 right-4 md:bottom-8 md:right-8
+    animate-pulse
+  `}
+      >
+        <div className="overflow-hidden">
+          <p
+            className={`
+        text-white text-md md:text-lg font-bold
+        transition-all duration-300 ease-in-out
+        ${
+          isVisible
+            ? "opacity-100 translate-x-0 visible"
+            : "opacity-0 -translate-x-full invisible"
+        }
+      `}
+          >
+            Contact Now!
+          </p>
+        </div>
+        <Button_Component />
+      </div>
+      
+     <div className="min-h-screen">
+      <section className="pb-12">
+        <Header />
+      </section>
+      
+      {/* Hero Section */}
+      <section className="w-full min-h-[90vh] flex flex-col lg:flex-row">
+        {/* Left Content - White Background */}
+        <div className="w-full lg:w-1/2 bg-white flex flex-col justify-center p-8 md:p-12 lg:p-16">
+          <div className="max-w-lg mx-auto">
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+              The next generation of fire protection and integrated security
+            </h1>
+            
+            <div className="space-y-6 mb-10">
+              <div className="flex items-start">
+                <div className=" w-12 h-12 rounded-full flex items-center justify-center mt-1 mr-4 flex-shrink-0">
+                  <Image 
+                    src={logo} 
+                    alt="Safety icon" 
+                    width={32} 
+                    height={32} 
+                  />
+                </div>
+                <div>
+                  <h2 className="text-xl font-bold text-gray-800">Neglecting Fire Safety Measures</h2>
+                  <p className="text-gray-600 mt-1">
+                    Avoid costly mistakes with our comprehensive fire safety solutions
+                  </p>
+                </div>
+              </div>
+              
+              <div className="flex items-start">
+                <div className=" w-12 h-12 rounded-full flex items-center justify-center mt-1 mr-4 flex-shrink-0">
+                  <Image 
+                    src={logo} 
+                    alt="Risk mitigation icon" 
+                    width={32} 
+                    height={32} 
+                  />
+                </div>
+                <div>
+                  <h2 className="text-xl font-bold text-gray-800">Mitigate Risk Of Life, Property & Offense Of Law</h2>
+                  <p className="text-gray-600 mt-1">
+                    Comprehensive protection systems to safeguard what matters most
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            <div className="flex flex-wrap gap-4">
+              <button
+                onClick={openPopup}
+                className="px-8 py-3 bg-gradient-to-r from-red-700 to-red-900 text-white font-bold rounded-lg hover:opacity-90 transition-opacity duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-transform"
+              >
+                GET A QUOTE
+              </button>
+              
+              <button className="px-8 py-3 bg-white border-2 border-gray-300 text-gray-800 font-bold rounded-lg hover:border-red-600 hover:text-red-700 transition-colors duration-300">
+                LEARN MORE
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        {/* Right Content - Image */}
+        <div className="w-full lg:w-1/2 relative min-h-[50vh] lg:min-h-[90vh]">
+          <Image
+            src={bg_img}
+            alt="Advanced fire protection system"
+            layout="fill"
+            objectFit="cover"
+            quality={90}
+            priority
+            className="select-none"
+          />
+          
+          {/* Overlay for better text contrast if needed */}
+          <div className="absolute inset-0 bg-gradient-to-r from-transparent to-white opacity-10 lg:hidden"></div>
+        </div>
+      </section>
+    </div>
+      <section className="min-h-screen flex flex-col relative">
+        <div className="bg-black flex flex-col min-h-[30%] md:min-h-[45%] items-center">
+          <div className="flex items-center justify-center gap-2 pt-8 ">
+            <div>
+              <Image src={forward} alt="forward" />
+            </div>
+            <div>
+              <h1 className="text-white lg:text-6xl text-4xl">Services</h1>
+            </div>
+          </div>
+          <Image
+            src={car_new}
+            alt="car small"
+            className="relative top-[1vh] lg:top-[3vh] lg:-mt-[1vh] w-[80vw] h-auto"
+            quality={100}
+          />
+        </div>
+        <Services />
+      </section>
+      <section
+        id="about"
+        className="scroll-smooth scroll-mt-14 relative min-h-screen flex flex-col"
+      >
+        <div className="absolute inset-0">
+          <Image src={about} alt="bg_img" fill className="object-cover" />
+        </div>
+        <div className="relative z-10 flex flex-col lg:gap-[12vh] md:gap-[10vh] gap-[1vh]">
+          <div className="flex items-center justify-center gap-2 pt-8">
+            <div>
+              <Image src={forward} alt="forward" />
+            </div>
+            <div>
+              <h1 className="text-white lg:text-6xl text-4xl">About Us</h1>
+            </div>
+          </div>
+          <div className="flex flex-col items-center w-full px-[5.313vw]">
+            <p className="text-white text-lg md:text-lg text-center px-4 lg:px-0 lg:text-2xl lg:leading-loose leading-loose">
+              At Xcellent Auto Repair, we believe in providing reliable, honest,
+              and transparent services. Our state-of-the-art facility is
+              equipped with the latest technology to diagnose and repair your
+              vehicle efficiently and accurately. Whether you need routine
+              maintenance, complex repairs, or specialized services, we have the
+              expertise to handle it all.
+            </p>
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 md:gap-[13vw] place items-center mt-6">
+              {About_data.map((data, index) => (
+                <div
+                  key={index}
+                  className="flex flex-col items-center gap-2 md:gap-8"
+                >
+                  <Image
+                    src={data.img}
+                    alt="images"
+                    className="w-14 h-14 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-40 lg:h-40"
+                  />
+                  <p className="md:text-2xl text-lg text-white">{data.title}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        className="min-h-screen bg-black flex flex-col gap-4 lg:gap-[16vh] md:gap-16"
+        ref={ref}
+      >
+        <div className="flex items-center justify-center gap-2 pt-8">
+          <div>
+            <Image src={forward} alt="forward" />
+          </div>
+          <div>
+            <h1 className="text-white lg:text-6xl text-4xl">We Are At</h1>
+          </div>
+        </div>
+        <div className="grid grid-cols-1 lg:grid-cols-3 px-[5.313vw]">
+          {Stats.map((data, index) => (
+            <div key={index} className="flex flex-col items-center gap-6 py-3">
+              <Image
+                src={data.img}
+                alt="img"
+                className="w-12 h-12 lg:w-32 lg:h-32 md:w-24 md:h-24"
+              />
+              <CountUp
+                start={0}
+                end={data.count}
+                delay={0}
+                duration={3.0}
+                useEasing={true}
+                key={inView ? 1 : 0}
+              >
+                {({ countUpRef }) => (
+                  <h1 className="text-white md:text-8xl text-4xl font-bold">
+                    <span ref={countUpRef} />
+                  </h1>
+                )}
+              </CountUp>
+              <p className="text-white">{data.title}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section className=" relative bg-black ">
+        <HowItWorks />
+      </section>
+
+      <section
+        id="reviews"
+        className="scroll-mt-14 min-h-screen relative bg-black flex flex-col lg:gap-[13vh] gap-[12vh]"
+      >
+        <div className="flex items-center justify-center gap-2 pt-8">
+          <div>
+            <Image src={forward} alt="forward" />
+          </div>
+          <div>
+            <h1 className="text-white lg:text-6xl text-3xl">
+              Customer Reviews
+            </h1>
+          </div>
+        </div>
+        <Reviews />
+      </section>
+      <section className="relative bg-black flex flex-col ">
+        <div className="flex items-center justify-center gap-2 pt-8">
+          <div>
+            <Image src={forward} alt="forward" />
+          </div>
+          <div>
+            <h1 className="text-white lg:text-6xl text-3xl">Brands We Serve</h1>
+          </div>
+        </div>
+        <Brands />
+      </section>
+      <PopupForm isOpen={isPopupOpen} onClose={closePopup} />
+      <section className="relative">
+        <div className="flex items-center justify-center gap-2 pt-8">
+          <div>
+            <Image src={forward} alt="forward" />
+          </div>
+          <div>
+            <h1 className="text-black lg:text-6xl text-3xl">FAQs</h1>
+          </div>
+        </div>
+        <Faqs />
+      </section>
+      <Footer />
+    </main>
+  );
+}
