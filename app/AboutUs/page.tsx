@@ -181,7 +181,7 @@ export default function Home() {
       </section>
     </div>
           <section
-        className=" bg-gray-100 flex flex-col "
+        className="uniform-bg-secondary uniform-section flex flex-col"
         ref={ref}
       >
         <div className="flex items-center justify-center gap-2 pt-20">
@@ -203,17 +203,17 @@ export default function Home() {
                 key={inView ? 1 : 0}
               >
                 {({ countUpRef }) => (
-                  <h1 className="text-black md:text-8xl text-4xl font-bold">
+                  <h1 className="uniform-text-primary md:text-8xl text-4xl font-bold">
                     <span ref={countUpRef} />
                   </h1>
                 )}
               </CountUp>
-              <p className="text-gray-800">{data.title}</p>
+              <p className="uniform-text-secondary">{data.title}</p>
             </div>
           ))}
         </div>
       </section>
-      <section className="p-10">
+      <section className="uniform-section uniform-container">
         
         <AboutUs />
       </section>
@@ -221,7 +221,7 @@ export default function Home() {
         
         <About3 />
       </section>
-      <section className="bg-gray-200">
+      <section className="uniform-bg-accent uniform-section">
         
         <Team />
       </section>
