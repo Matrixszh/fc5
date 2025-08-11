@@ -181,7 +181,7 @@ export default function Home() {
       </section>
     </div>
           <section
-        className=" bg-gray-100 flex flex-col "
+        className="uniform-bg-secondary uniform-section flex flex-col"
         ref={ref}
       >
         <div className="flex items-center justify-center gap-2 pt-20">
