@@ -3,10 +3,10 @@ import React from 'react';
 
 const Banner = () => {
   return (
-    <div className="w-full bg-yellow-500 py-2 px-4 md:px-8">
+    <div className="w-full bg-[#FFFB00] py-2 px-4 md:px-8">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-1 text-sm md:text-base">
         <div className="font-semibold text-gray-800">
-          Since 25 Years Of Altruism
+        25 Years Of Altruism
         </div>
         <div className="flex items-center gap-2">
           <span className="font-medium text-gray-800">
