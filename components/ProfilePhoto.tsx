@@ -13,13 +13,13 @@ export const ProfilePhoto = () => {
         className="p-4 shadow-2xl z-10 relative"
         style={{
           background: "",
-          width: "40vw", // Adjust width based on your design
+          width: "30vw", // Adjust width based on your design
         }}
       >
         <Image
           src={abdullah2}
           alt="abdullah"
-          className=" z-10 h-[40vw]"
+          className=" z-10 h-[30vw]"
           style={{ width: "100%" }} // Image width is relative to the parent div
           priority
         />

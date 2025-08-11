@@ -5,19 +5,23 @@ import Marquee from "react-fast-marquee";
 const ConveyorBelt = () => {
   // Define image data with titles
   const beltOneItems = [
-    { src: "/logo2.png", title: "Fire Alarm Systems" },
-    { src: "/logo2.png", title: "Sprinkler Systems" },
-    { src: "/logo2.png", title: "Fire Extinguishers" },
-    { src: "/logo2.png", title: "Emergency Lighting" },
-    { src: "/logo2.png", title: "Smoke Detectors" },
+    { src: "/logo2.png", title: "Fire Prevention Design & Hazard Assessment" },
+    { src: "/logo2.png", title: "Sprinkler Fire Hydrant & Hose Reel Reticulation" },
+    { src: "/logo2.png", title: "Fire Fire Sprinkler & Water Curtain Installations" },
+    { src: "/logo2.png", title: "Fire/Smoke Detection & Alarm Systems" },
+    { src: "/logo2.png", title: "Fire Exit Structural Staircase" },
+    { src: "/logo.png", title: "Security Fire Safety Inpanel Systems" },
+    { src: "/logo.png", title: "Fire Prevention Design & Hazard Assessment" },
   ];
 
   const beltTwoItems = [
-    { src: "/logo.png", title: "Security Cameras" },
-    { src: "/logo.png", title: "Access Control" },
-    { src: "/logo.png", title: "Intrusion Detection" },
-    { src: "/logo.png", title: "Fire Suppression" },
-    { src: "/logo.png", title: "Alarm Systems" },
+    { src: "/logo.png", title: "Fire Extinguishers" },
+    { src: "/logo.png", title: "Gas Flooding Systems" },
+    { src: "/logo.png", title: "Fire Exit signage's & Escape Plans" },
+    { src: "/logo.png", title: "Fire Pumps" },
+    { src: "/logo.png", title: "Public Address System" },
+    { src: "/logo.png", title: "Standalone Systems" },
+    { src: "/logo.png", title: "Fire Dose" },
   ];
 
   // Triple the items to ensure smooth continuous movement

@@ -55,8 +55,8 @@ export default function Certifications() {
   return (
     <section className="py-16 md:py-24 " ref={certRef}>
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold mb-12 text-red-500 text-center">
-          Certifications & Awards
+        <h2 className="text-center text-3xl md:text-5xl font-bold mb-4 text-black pb-7">
+          Our<span className="text-red-500"> Certifications</span>
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">

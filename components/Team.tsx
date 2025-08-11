@@ -7,7 +7,7 @@ const Team: React.FC = () => {
       <div className="mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
           {/* Card 1 */}
-          <div className="bg-white p-6 rounded-lg shadow-lg transform transition-transform hover:scale-105 duration-300">
+          <div className="bg-white p-6 rounded-xl shadow-lg transform transition-transform hover:scale-105 duration-300">
             <Image
               src="/logo.png" // Replace with your image path
               alt="Pace Morby"
@@ -24,7 +24,7 @@ const Team: React.FC = () => {
           </div>
           
           {/* Card 2 */}
-          <div className="bg-white p-6 rounded-lg shadow-lg transform transition-transform hover:scale-105 duration-300">
+          <div className="bg-white p-6 rounded-xl shadow-lg transform transition-transform hover:scale-105 duration-300">
             <Image
               src="/logo.png" // Replace with your image path
               alt="Jade Jarvis"
@@ -40,7 +40,7 @@ const Team: React.FC = () => {
           </div>
 
           {/* Card 3 */}
-          <div className="bg-white p-6 rounded-lg shadow-lg transform transition-transform hover:scale-105 duration-300">
+          <div className="bg-white p-6 rounded-xl shadow-lg transform transition-transform hover:scale-105 duration-300">
             <Image
               src="/logo.png" // Replace with your image path
               alt="Heather"
@@ -55,7 +55,7 @@ const Team: React.FC = () => {
             </p>
           </div>
           {/* Card 4 */}
-          <div className="bg-white p-6 rounded-lg shadow-lg transform transition-transform hover:scale-105 duration-300">
+          <div className="bg-white p-6 rounded-xl shadow-lg transform transition-transform hover:scale-105 duration-300">
             <Image
               src="/logo.png" // Replace with your image path
               alt="Nathan"

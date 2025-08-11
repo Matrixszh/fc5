@@ -1,34 +1,18 @@
 "use client";
 import Image from "next/image";
-import bg_img from "../public/bgimg1.png";
-import bg_img2 from "../public/bg_img2.jpeg";
-import bg_img3 from "../public/bg_img3.jpeg";
-import forward from "../public/Forward.png";
-import car_small from "../public/car_small.png";
-import car_large from "../public/car_large.png";
-import car from "../public/car.png";
-import car_new from "../public/car_new.png";
-import car_new2 from "../public/car_new2.png";
-import car2 from "../public/car2.png";
-import logo from "../public/logo.png";
+import bg_img from "../../public/bgimg5.jpg";
+import logo from "../../public/logo.png";
 import React, { useState, useEffect } from "react";
 import { Header } from "@/components/Header";
-import Service from "@/components/Service";
-import about from "../public/about.png";
-import { About_data } from "@/components/Data/About_Data";
 import { Stats } from "@/components/Data/We_Are_Data";
-import Reviews from "@/components/Reviews";
-import Brands from "@/components/Brands";
 import PopupForm from "@/components/PopupForm";
-import Faqs from "@/components/Faqs";
 import CountUp from "react-countup";
 import { Footer } from "@/components/Footer";
-import ImgCarousal  from "@/components/ImgCarousal";
 import { useInView } from "react-intersection-observer";
 import { Button_Component } from "@/components/Button_Component";
-import Intro from "@/components/Intro";
-import { Carousel } from "@/components/ui/carousel";
-import { SpecialityComponent } from "@/components/SpecialityComponent";
+import { AboutUs } from "@/components/About";
+import About3 from "@/components/About3";
+import Team from "@/components/Team";
 import Link from "next/link";
 
 export default function Home() {
@@ -104,9 +88,8 @@ export default function Home() {
         {/* Left Content - White Background */}
         <div className="w-full lg:w-1/2 bg-white flex flex-col justify-center p-8 md:p-12 lg:p-16">
           <div className="max-w-lg mx-auto">
-            <h1 className="uniform-heading-xl uniform-text-primary leading-10 mb-6 text-center lg:text-left">
-              The next generation of
-               fire protection and integrated security
+            <h1 className="uniform-heading-xl mb-6">
+              <span className="text-red-500">Contact</span> <span className="text-black">Us</span>
             </h1>
             
             <div className="space-y-6 mb-10">
@@ -120,9 +103,9 @@ export default function Home() {
                   />
                 </div>
                 <div>
-                  <h2 className="uniform-heading-sm uniform-text-secondary">Neglecting Fire Safety Measures</h2>
+                  <h2 className="uniform-heading-sm uniform-text-secondary">Fire Safety Excellence</h2>
                   <p className="uniform-text-base uniform-text-muted mt-1">
-                    Avoid costly mistakes with our comprehensive fire safety solutions
+                    Learn about our comprehensive fire safety solutions and expertise
                   </p>
                 </div>
               </div>
@@ -137,9 +120,9 @@ export default function Home() {
                   />
                 </div>
                 <div>
-                  <h2 className="uniform-heading-sm uniform-text-secondary">Mitigate Risk Of Life, Property & Offense Of Law</h2>
+                  <h2 className="uniform-heading-sm uniform-text-secondary">Our Story & Mission</h2>
                   <p className="uniform-text-base uniform-text-muted mt-1">
-                    Comprehensive protection systems to safeguard what matters most
+                    Discover our journey and commitment to protecting lives and property
                   </p>
                 </div>
               </div>
@@ -156,6 +139,7 @@ export default function Home() {
           </div>
         </div>
         
+        
         {/* Right Content - Image */}
         <div className="w-full lg:w-1/2 relative min-h-[50vh] lg:min-h-[90vh]">
           <Image
@@ -169,46 +153,74 @@ export default function Home() {
           />
           
           {/* Overlay for better text contrast if needed */}
-          <div className="absolute inset-0 bg-gradient-to-r from-transparent to-white opacity-10 lg:hidden"></div>
+          
         </div>
       </section>
     </div>
-      <section className="">
-        
-        <Intro />
+          <section
+        className="uniform-bg-secondary uniform-section flex flex-col"
+        ref={ref}
+      >
+        <div className="flex items-center justify-center gap-2 pt-20">
+        </div>
+        <div className="grid grid-cols-1 lg:grid-cols-3 px-[5.313vw]">
+          {Stats.map((data, index) => (
+            <div key={index} className="flex flex-col items-center gap-6 py-3">
+              <Image
+                src={data.img}
+                alt="img"
+                className="w-12 h-12 lg:w-28 lg:h-28 md:w-24 md:h-24"
+              />
+              <CountUp
+                start={0}
+                end={data.count}
+                delay={0}
+                duration={3.0}
+                useEasing={true}
+                key={inView ? 1 : 0}
+              >
+                {({ countUpRef }) => (
+                  <h1 className="uniform-text-primary md:text-5xl text-4xl font-bold">
+                    <span ref={countUpRef} />
+                  </h1>
+                )}
+              </CountUp>
+              <p className="uniform-text-secondary">{data.title}</p>
+            </div>
+          ))}
+        </div>
       </section>
-      <section className="">
+      <section className="uniform-section uniform-container">
         
-        <ImgCarousal />
+        <AboutUs />
       </section>
-      <section className="pt-7">
+      <section className="mt-7">
         <div className="text-center mb-16">
         <h2 className="text-3xl md:text-5xl font-bold mb-4 text-black">
-          What Makes Us<span className="text-red-500"> Different</span>
+          What We<span className="text-red-500"> Do</span>
         </h2>
         <p className="text-gray-800 max-w-2xl mx-auto text-lg">
           Discover how our financing solutions have transformed investment journeys
         </p>
       </div>
-        
-        <SpecialityComponent />
+        <About3 />
       </section>
-<section
-       
-      >
-
-
-        <Service />
+      <section className="uniform-bg-accent uniform-section">
+        <div className="text-center mb-16">
+        <h2 className="text-3xl md:text-5xl font-bold mb-4 text-black">
+          Our<span className="text-red-500"> Team</span>
+        </h2>
+        <p className="text-gray-800 max-w-2xl mx-auto text-lg">
+          Discover how our financing solutions have transformed investment journeys
+        </p>
+      </div>
+        <Team />
       </section>
+
 
       <PopupForm isOpen={isPopupOpen} onClose={closePopup} />
       <section className="relative">
-        <div className="flex items-center justify-center gap-2 pt-8">
-          <div>
-            <h1 className="uniform-heading-xl uniform-text-primary">FAQs</h1>
-          </div>
-        </div>
-        <Faqs />
+
       </section>
       <Footer />
     </main>

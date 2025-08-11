@@ -21,16 +21,6 @@ export const AboutUs = () => {
           particular stage, my proficient team is dedicated to exploring new
           markets, uncovering new growth opportunities, and driving strategies
           to grow and retain our customer base.
-          <span className="hidden lg:flex lg:pt-4 tracking-tight">
-            My career has been deeply rooted in the service industry, giving me
-            a unique understanding of the diverse needs of individuals. This
-            experience enables me to connect with people effectively and deliver
-            the best possible outcomes for all parties involved. I have coached
-            over 200 students with a 99% success rate, and I now own nine
-            businesses. I attribute the success of these ventures entirely to
-            mastering the right systems, processes, and the importance of having
-            the right people in place.
-          </span>
         </p>
       </div>
       <div className="">
@@ -38,7 +28,7 @@ export const AboutUs = () => {
         <Image
           src={abdullah2}
           alt="abdullah"
-          className=" lg:hidden  w-[80vw] h-[30vw] shadow-2xl"
+          className=" lg:hidden rounded-xl w-[80vw] h-[30vw] shadow-2xl"
         />
       </div>
     </div>

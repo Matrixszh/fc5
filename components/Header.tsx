@@ -44,7 +44,7 @@ export const Header = () => {
   return (
     <>
       <header
-        className="flex justify-between w-full px-1 md:p-2 max-h-[87px] z-20 bg-white shadow-xl"
+        className="flex justify-between w-full px-1 md:p-2 max-h-[87px] z-20 bg-white shadow-5xl shadow-black border border-b-1 border-black"
       >
         {isMenuOpen && (
           <div

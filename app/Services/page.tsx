@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import bg_img from "../../public/bg_img.jpg";
+import bg_img from "../../public/bgimg4.jpg";
 import bg_img2 from "../public/bg_img2.jpeg";
 import bg_img3 from "../public/bg_img3.jpeg";
 import forward from "../public/Forward.png";
@@ -36,6 +36,7 @@ import Team from "@/components/Team";
 import Service2 from "@/components/Service2";
 import Certifications from "@/components/Certifications";
 import Servintro from "@/components/Servintro";
+import Link from "next/link";
 
 export default function Home() {
   const [scrolled, setIsScrolled] = useState(false);
@@ -110,8 +111,8 @@ export default function Home() {
         {/* Left Content - White Background */}
         <div className="w-full lg:w-1/2 bg-white flex flex-col justify-center p-8 md:p-12 lg:p-16">
           <div className="max-w-lg mx-auto">
-            <h1 className="uniform-heading-xl mb-6">
-              <span className="text-red-500">Our</span> <span className="text-black">Services</span>
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+              The next generation of fire protection and integrated security
             </h1>
             
             <div className="space-y-6 mb-10">
@@ -125,9 +126,9 @@ export default function Home() {
                   />
                 </div>
                 <div>
-                  <h2 className="uniform-heading-sm uniform-text-secondary">Complete Fire Protection</h2>
-                  <p className="uniform-text-base uniform-text-muted mt-1">
-                    Comprehensive fire safety systems and installation services
+                  <h2 className="text-xl font-bold text-gray-800">Neglecting Fire Safety Measures</h2>
+                  <p className="text-gray-600 mt-1">
+                    Avoid costly mistakes with our comprehensive fire safety solutions
                   </p>
                 </div>
               </div>
@@ -142,25 +143,21 @@ export default function Home() {
                   />
                 </div>
                 <div>
-                  <h2 className="uniform-heading-sm uniform-text-secondary">Professional Installation</h2>
-                  <p className="uniform-text-base uniform-text-muted mt-1">
-                    Expert installation and maintenance of safety equipment
+                  <h2 className="text-xl font-bold text-gray-800">Mitigate Risk Of Life, Property & Offense Of Law</h2>
+                  <p className="text-gray-600 mt-1">
+                    Comprehensive protection systems to safeguard what matters most
                   </p>
                 </div>
               </div>
             </div>
             
-            <div className="flex flex-wrap gap-4">
-              <button
-                onClick={openPopup}
-                className="uniform-button-primary"
-              >
-                GET A QUOTE
+            <div className="flex flex-wrap justify-center jusitfy gap-4">
+             
+           <Link href="/Contact">
+              <button className="text-sm mt-4 px-4 py-2 rounded-full border border-red-500 text-red-500 font-medium hover:bg-red-500 hover:text-white transition">
+                Contact Us
               </button>
-              
-              <button className="uniform-button-secondary">
-                LEARN MORE
-              </button>
+            </Link>
             </div>
           </div>
         </div>
@@ -183,15 +180,15 @@ export default function Home() {
         </div>
       </section>
     </div>
-        <section className="uniform-bg-accent uniform-section-alt">
+        <section className="bg-gray-100 pb-10">
         
         <Servintro />
       </section>
-      <section className="">
+      <section >
         
         <Service2 />
       </section>
-            <section className="uniform-bg-accent uniform-section">
+            <section className="bg-gray-100">
         
         <Certifications />
       </section>

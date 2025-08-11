@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import bg_img from "../../public/bg_img.jpg";
+import bg_img from "../../public/bgimg3.jpg";
 import bg_img2 from "../public/bg_img2.jpeg";
 import bg_img3 from "../public/bg_img3.jpeg";
 import forward from "../public/Forward.png";
@@ -33,6 +33,7 @@ import { AboutUs } from "@/components/About";
 import About3 from "@/components/About3";
 import Teams from "@/components/Team";
 import Team from "@/components/Team";
+import Link from "next/link";
 
 export default function Home() {
   const [scrolled, setIsScrolled] = useState(false);
@@ -147,17 +148,13 @@ export default function Home() {
               </div>
             </div>
             
-            <div className="flex flex-wrap gap-4">
-              <button
-                onClick={openPopup}
-                className="uniform-button-primary"
-              >
-                GET A QUOTE
+            <div className="flex flex-wrap justify-center jusitfy gap-4">
+             
+           <Link href="/Contact">
+              <button className="text-sm mt-4 px-4 py-2 rounded-full border border-red-500 text-red-500 font-medium hover:bg-red-500 hover:text-white transition">
+                Contact Us
               </button>
-
-              <button className="uniform-button-secondary">
-                LEARN MORE
-              </button>
+            </Link>
             </div>
           </div>
         </div>
@@ -192,7 +189,7 @@ export default function Home() {
               <Image
                 src={data.img}
                 alt="img"
-                className="w-12 h-12 lg:w-32 lg:h-32 md:w-24 md:h-24"
+                className="w-12 h-12 lg:w-28 lg:h-28 md:w-24 md:h-24"
               />
               <CountUp
                 start={0}
@@ -203,7 +200,7 @@ export default function Home() {
                 key={inView ? 1 : 0}
               >
                 {({ countUpRef }) => (
-                  <h1 className="uniform-text-primary md:text-8xl text-4xl font-bold">
+                  <h1 className="uniform-text-primary md:text-5xl text-4xl font-bold">
                     <span ref={countUpRef} />
                   </h1>
                 )}
@@ -217,12 +214,26 @@ export default function Home() {
         
         <AboutUs />
       </section>
-      <section className="">
-        
+      <section className="mt-7">
+        <div className="text-center mb-16">
+        <h2 className="text-3xl md:text-5xl font-bold mb-4 text-black">
+          What We<span className="text-red-500"> Do</span>
+        </h2>
+        <p className="text-gray-800 max-w-2xl mx-auto text-lg">
+          Discover how our financing solutions have transformed investment journeys
+        </p>
+      </div>
         <About3 />
       </section>
       <section className="uniform-bg-accent uniform-section">
-        
+        <div className="text-center mb-16">
+        <h2 className="text-3xl md:text-5xl font-bold mb-4 text-black">
+          Our<span className="text-red-500"> Team</span>
+        </h2>
+        <p className="text-gray-800 max-w-2xl mx-auto text-lg">
+          Discover how our financing solutions have transformed investment journeys
+        </p>
+      </div>
         <Team />
       </section>
 

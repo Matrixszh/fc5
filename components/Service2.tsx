@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { FaFire } from 'react-icons/fa';
 
 const CrossfireServices = () => {
@@ -38,15 +39,15 @@ const CrossfireServices = () => {
       </div>
 
       {/* Services Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+      <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
         {services.map((service) => (
           <div
             key={service.id}
-            className="bg-white border-2 border-gray-200 rounded-lg p-6 text-center hover:shadow-lg transition-shadow duration-300"
+            className="rounded-xl bg-white border-2 border-gray-200 rounded-lg p-6 text-center hover:shadow-lg transition-shadow duration-300"
           >
             {/* Icon */}
             <div className="flex justify-center mb-4">
-              <div className="w-16 h-16 flex items-center justify-center">
+              <div className=" w-16 h-16 flex items-center justify-center">
                 <FaFire className={`${service.iconColor} text-4xl`} />
               </div>
             </div>
@@ -65,11 +66,14 @@ const CrossfireServices = () => {
       </div>
 
       {/* Learn More Button */}
-      <div className="text-center">
-        <button className="uniform-button-secondary">
-          LEARN MORE
-        </button>
-      </div>
+           <div className="flex flex-wrap justify-center jusitfy gap-4">
+             
+           <Link href="/Contact">
+              <button className="text-sm mt-4 px-4 py-2 rounded-full border border-red-500 text-red-500 font-medium hover:bg-red-500 hover:text-white transition">
+                Contact Us
+              </button>
+            </Link>
+            </div>
     </div>
   );
 };
