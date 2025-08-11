@@ -110,8 +110,8 @@ export default function Home() {
         {/* Left Content - White Background */}
         <div className="w-full lg:w-1/2 bg-white flex flex-col justify-center p-8 md:p-12 lg:p-16">
           <div className="max-w-lg mx-auto">
-            <h1 className="uniform-heading-xl uniform-text-primary mb-6">
-              The next generation of fire protection and integrated security
+            <h1 className="uniform-heading-xl mb-6">
+              <span className="text-red-500">Project</span> <span className="text-black">Gallery</span>
             </h1>
             
             <div className="space-y-6 mb-10">
@@ -125,9 +125,9 @@ export default function Home() {
                   />
                 </div>
                 <div>
-                  <h2 className="uniform-heading-sm uniform-text-secondary">Neglecting Fire Safety Measures</h2>
+                  <h2 className="uniform-heading-sm uniform-text-secondary">Our Completed Projects</h2>
                   <p className="uniform-text-base uniform-text-muted mt-1">
-                    Avoid costly mistakes with our comprehensive fire safety solutions
+                    View our portfolio of successful fire safety installations
                   </p>
                 </div>
               </div>
@@ -142,9 +142,9 @@ export default function Home() {
                   />
                 </div>
                 <div>
-                  <h2 className="uniform-heading-sm uniform-text-secondary">Mitigate Risk Of Life, Property & Offense Of Law</h2>
+                  <h2 className="uniform-heading-sm uniform-text-secondary">Quality Workmanship</h2>
                   <p className="uniform-text-base uniform-text-muted mt-1">
-                    Comprehensive protection systems to safeguard what matters most
+                    See the quality and precision of our professional installations
                   </p>
                 </div>
               </div>
