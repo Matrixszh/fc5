@@ -32,8 +32,8 @@ const CrossfireServices = () => {
     <div className="max-w-6xl mx-auto p-8 ">
       {/* Header */}
       <div className="text-center mb-12">
-        <h1 className="text-3xl font-bold text-gray-900 mb-2">
-          Services provided by CROSSFIRE
+        <h1 className="uniform-heading-lg mb-2">
+          Services provided by <span className="text-red-500">CROSS</span><span className="text-black">FIRE</span>
         </h1>
       </div>
 
@@ -52,12 +52,12 @@ const CrossfireServices = () => {
             </div>
 
             {/* Title */}
-            <h3 className="text-lg font-semibold text-gray-900 mb-4">
+            <h3 className="uniform-heading-sm uniform-text-primary mb-4">
               Automatic Fire Sprinkler System
             </h3>
 
             {/* Description */}
-            <p className="text-sm text-gray-600 leading-relaxed">
+            <p className="uniform-text-base uniform-text-muted leading-relaxed">
               Our mission is to provide multidisciplinary fire safety solutions through technical expertise, practical implementation, and adherence to
             </p>
           </div>
@@ -66,7 +66,7 @@ const CrossfireServices = () => {
 
       {/* Learn More Button */}
       <div className="text-center">
-        <button className="bg-white border-2 border-gray-300 text-gray-700 px-8 py-3 rounded-full font-medium hover:bg-gray-50 hover:border-gray-400 transition-colors duration-300">
+        <button className="uniform-button-secondary">
           LEARN MORE
         </button>
       </div>
