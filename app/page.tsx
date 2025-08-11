@@ -29,6 +29,7 @@ import { Button_Component } from "@/components/Button_Component";
 import Intro from "@/components/Intro";
 import { Carousel } from "@/components/ui/carousel";
 import { SpecialityComponent } from "@/components/SpecialityComponent";
+import Link from "next/link";
 
 export default function Home() {
   const [scrolled, setIsScrolled] = useState(false);
@@ -103,8 +104,9 @@ export default function Home() {
         {/* Left Content - White Background */}
         <div className="w-full lg:w-1/2 bg-white flex flex-col justify-center p-8 md:p-12 lg:p-16">
           <div className="max-w-lg mx-auto">
-            <h1 className="uniform-heading-xl uniform-text-primary mb-6">
-              The next generation of fire protection and integrated security
+            <h1 className="uniform-heading-xl uniform-text-primary leading-10 mb-6 text-center lg:text-left">
+              The next generation of
+               fire protection and integrated security
             </h1>
             
             <div className="space-y-6 mb-10">
@@ -143,17 +145,13 @@ export default function Home() {
               </div>
             </div>
             
-            <div className="flex flex-wrap gap-4">
-              <button
-                onClick={openPopup}
-                className="uniform-button-primary"
-              >
-                GET A QUOTE
+            <div className="flex flex-wrap justify-center jusitfy gap-4">
+             
+           <Link href="/Contact">
+              <button className="text-sm mt-4 px-4 py-2 rounded-full border border-red-500 text-red-500 font-medium hover:bg-red-500 hover:text-white transition">
+                Contact Us
               </button>
-              
-              <button className="uniform-button-secondary">
-                LEARN MORE
-              </button>
+            </Link>
             </div>
           </div>
         </div>
@@ -183,32 +181,23 @@ export default function Home() {
         
         <ImgCarousal />
       </section>
-      <section className="">
+      <section className="pt-7">
+        <div className="text-center mb-16">
+        <h2 className="text-3xl md:text-5xl font-bold mb-4 text-black">
+          What Makes Us<span className="text-red-500"> Different</span>
+        </h2>
+        <p className="text-gray-800 max-w-2xl mx-auto text-lg">
+          Discover how our financing solutions have transformed investment journeys
+        </p>
+      </div>
         
         <SpecialityComponent />
       </section>
 <section
-        className="relative  flex flex-col items-center text-white my-16 "
-        id="testimonial_sec"
+       
       >
-        <div className="mb-4">
-          <span className="px-6 py-2 bg-custom-gradient text-white font-semibold rounded-full">
-            TESTIMONIAL
-          </span>
-        </div>
-        <h2
-          className="uniform-heading-lg text-center text-white mt-6 mb-4"
-          id="testimonial_heading"
-        >
-          What Clients Are Saying
-        </h2>
-        <p
-          className="uniform-text-lg lg:max-w-2xl max-w-lg mt-2 text-center text-white px-2"
-          id="testmonial_content"
-        >
-          Hear from our satisfied customers who have experienced the benfit of
-          using our services and what their dreams have become
-        </p>
+
+
         <Service />
       </section>
 

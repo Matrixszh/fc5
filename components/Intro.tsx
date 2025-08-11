@@ -12,8 +12,8 @@ const Intro= () => {
             <span className="text-red-500">Speaker</span> on our <br />
             Podcast <span className="text-red-500">?</span>
           </h1>
-           <Link href="/HomePage">
-              <button className="mt-6 px-6 py-3 rounded-full border border-red-500 text-red-500 font-medium hover:bg-red-500 hover:text-white transition">
+           <Link href="/AboutUs">
+              <button className="text-sm mt-6 px-4 py-2 rounded-full border border-red-500 text-red-500 font-medium hover:bg-red-500 hover:text-white transition">
                 Read Our Story
               </button>
             </Link>

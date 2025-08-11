@@ -18,7 +18,7 @@ export const SpecialityComponent = () => {
 
   return (
     <div className="flex flex-col items-center justify-center w-full gap-10 py-16">
-      <div className="lg:w-[40vw]  w-[80vw] rounded-full bg-black bg-opacity-20 flex justify-evenly">
+      <div className="lg:w-[40vw]  w-[80vw] rounded-full bg-black bg-opacity-10 flex justify-evenly">
         {(["Trust", "Volume", "Bespoke"] as const).map((button) => (
           <button
             key={button}
@@ -40,7 +40,7 @@ export const SpecialityComponent = () => {
       </div>
 
       <div className="w-full flex justify-center ">
-        <Card className="lg:w-[60vw] w-[80vw] bg-opacity-20 bg-black flex md:flex-row flex-col lg:justify-between justify-center items-center border-none min-h-[40vh]">
+        <Card className="lg:w-[60vw] w-[80vw] bg-opacity-10 bg-black flex md:flex-row flex-col lg:justify-between justify-center items-center border-none min-h-[40vh]">
           <div className="lg:w-[60vw] md:w-[50vw] lg:h-full h-[90vw] flex items-center flex-col justify-center">
             <CardHeader>
               <CardTitle className="md:text-3xl text-2xl text-black text-center">
