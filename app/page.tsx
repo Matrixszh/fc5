@@ -146,12 +146,12 @@ export default function Home() {
             <div className="flex flex-wrap gap-4">
               <button
                 onClick={openPopup}
-                className="px-8 py-3 bg-gradient-to-r from-red-700 to-red-900 text-white font-bold rounded-lg hover:opacity-90 transition-opacity duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-transform"
+                className="uniform-button-primary"
               >
                 GET A QUOTE
               </button>
               
-              <button className="px-8 py-3 bg-white border-2 border-gray-300 text-gray-800 font-bold rounded-lg hover:border-red-600 hover:text-red-700 transition-colors duration-300">
+              <button className="uniform-button-secondary">
                 LEARN MORE
               </button>
             </div>
@@ -197,13 +197,13 @@ export default function Home() {
           </span>
         </div>
         <h2
-          className="text-3xl md:text-4xl font-semibold mt-6 mb-4 text-center"
+          className="uniform-heading-lg text-center text-white mt-6 mb-4"
           id="testimonial_heading"
         >
           What Clients Are Saying
         </h2>
         <p
-          className="text-md md:text-xl lg:max-w-2xl max-w-lg mt-2 text-center text-white px-2"
+          className="uniform-text-lg lg:max-w-2xl max-w-lg mt-2 text-center text-white px-2"
           id="testmonial_content"
         >
           Hear from our satisfied customers who have experienced the benfit of
@@ -216,7 +216,7 @@ export default function Home() {
       <section className="relative">
         <div className="flex items-center justify-center gap-2 pt-8">
           <div>
-            <h1 className="text-black lg:text-6xl text-3xl">FAQs</h1>
+            <h1 className="uniform-heading-xl uniform-text-primary">FAQs</h1>
           </div>
         </div>
         <Faqs />
