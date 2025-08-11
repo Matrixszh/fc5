@@ -65,19 +65,19 @@ export const Header = () => {
         <div className="hidden lg:flex justify-between items-center gap-8 p-8">
           <p className="text-black font-bold hover:text-[#e20303] cursor-pointer">
             {" "}
-            <a href="#about ">About</a>
+            <a href="/">Home</a>
           </p>
           <p className="text-black font-bold hover:text-[#e20303] cursor-pointer">
-            <a href="#reviews">Reviews</a>{" "}
+            <a href="/AboutUs">About</a>{" "}
           </p>
           <p className="text-black font-bold hover:text-[#e20303] cursor-pointer">
-            <a href="#contact">Contact</a>
+            <a href="/Services">Services</a>
           </p>
           <p className="text-black font-bold hover:text-[#e20303] cursor-pointer">
-            <a href="#contact">Contact</a>
+            <a href="/Gallery">Gallery</a>
           </p>
           <p className="text-black font-bold hover:text-[#e20303] cursor-pointer">
-            <a href="#contact">Contact</a>
+            <a href="/Contact">Contact</a>
           </p>
         </div>
 

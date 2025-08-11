@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import bg_img from "../public/bg_img.jpg";
+import bg_img from "../../public/bg_img.jpg";
 import bg_img2 from "../public/bg_img2.jpeg";
 import bg_img3 from "../public/bg_img3.jpeg";
 import forward from "../public/Forward.png";
@@ -10,7 +10,7 @@ import car from "../public/car.png";
 import car_new from "../public/car_new.png";
 import car_new2 from "../public/car_new2.png";
 import car2 from "../public/car2.png";
-import logo from "../public/logo.png";
+import logo from "../../public/logo.png";
 import React, { useState, useEffect } from "react";
 import { Header } from "@/components/Header";
 import Service from "@/components/Service";
@@ -29,6 +29,13 @@ import { Button_Component } from "@/components/Button_Component";
 import Intro from "@/components/Intro";
 import { Carousel } from "@/components/ui/carousel";
 import { SpecialityComponent } from "@/components/SpecialityComponent";
+import { AboutUs } from "@/components/About";
+import About3 from "@/components/About3";
+import Teams from "@/components/Team";
+import Team from "@/components/Team";
+import Service2 from "@/components/Service2";
+import Certifications from "@/components/Certifications";
+import Gallery from "@/components/Gallery";
 
 export default function Home() {
   const [scrolled, setIsScrolled] = useState(false);
@@ -158,6 +165,7 @@ export default function Home() {
           </div>
         </div>
         
+        
         {/* Right Content - Image */}
         <div className="w-full lg:w-1/2 relative min-h-[50vh] lg:min-h-[90vh]">
           <Image
@@ -171,55 +179,21 @@ export default function Home() {
           />
           
           {/* Overlay for better text contrast if needed */}
-          <div className="absolute inset-0 bg-gradient-to-r from-transparent to-white opacity-10 lg:hidden"></div>
+          
         </div>
       </section>
     </div>
-      <section className="">
+
+      <section className="bg-gray-200">
         
-        <Intro />
+        <Gallery />
       </section>
-      <section className="">
-        
-        <ImgCarousal />
-      </section>
-      <section className="">
-        
-        <SpecialityComponent />
-      </section>
-<section
-        className="relative  flex flex-col items-center text-white my-16 "
-        id="testimonial_sec"
-      >
-        <div className="mb-4">
-          <span className="px-6 py-2 bg-custom-gradient text-white font-semibold rounded-full">
-            TESTIMONIAL
-          </span>
-        </div>
-        <h2
-          className="text-3xl md:text-4xl font-semibold mt-6 mb-4 text-center"
-          id="testimonial_heading"
-        >
-          What Clients Are Saying
-        </h2>
-        <p
-          className="text-md md:text-xl lg:max-w-2xl max-w-lg mt-2 text-center text-white px-2"
-          id="testmonial_content"
-        >
-          Hear from our satisfied customers who have experienced the benfit of
-          using our services and what their dreams have become
-        </p>
-        <Service />
-      </section>
+
+
 
       <PopupForm isOpen={isPopupOpen} onClose={closePopup} />
       <section className="relative">
-        <div className="flex items-center justify-center gap-2 pt-8">
-          <div>
-            <h1 className="text-black lg:text-6xl text-3xl">FAQs</h1>
-          </div>
-        </div>
-        <Faqs />
+
       </section>
       <Footer />
     </main>

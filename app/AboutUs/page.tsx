@@ -17,7 +17,6 @@ import Service from "@/components/Service";
 import about from "../public/about.png";
 import { About_data } from "@/components/Data/About_Data";
 import { Stats } from "@/components/Data/We_Are_Data";
-import HowItWorks from "@/components/HowItWorks";
 import Reviews from "@/components/Reviews";
 import Brands from "@/components/Brands";
 import PopupForm from "@/components/PopupForm";
@@ -30,6 +29,10 @@ import { Button_Component } from "@/components/Button_Component";
 import Intro from "@/components/Intro";
 import { Carousel } from "@/components/ui/carousel";
 import { SpecialityComponent } from "@/components/SpecialityComponent";
+import { AboutUs } from "@/components/About";
+import About3 from "@/components/About3";
+import Teams from "@/components/Team";
+import Team from "@/components/Team";
 
 export default function Home() {
   const [scrolled, setIsScrolled] = useState(false);
@@ -100,7 +103,7 @@ export default function Home() {
       </section>
       
       {/* Hero Section */}
-      <section className="w-full min-h-[100vh] flex flex-col lg:flex-row">
+      <section className="w-full lg:min-h-[100vh] flex flex-col lg:flex-row">
         {/* Left Content - White Background */}
         <div className="w-full lg:w-1/2 bg-white flex flex-col justify-center p-8 md:p-12 lg:p-16">
           <div className="max-w-lg mx-auto">
@@ -210,51 +213,23 @@ export default function Home() {
           ))}
         </div>
       </section>
-      <section className="">
+      <section className="p-10">
         
-        <Intro />
-      </section>
-      <section className="">
-        
-        <ImgCarousal />
+        <AboutUs />
       </section>
       <section className="">
         
-        <SpecialityComponent />
+        <About3 />
       </section>
-<section
-        className="relative  flex flex-col items-center text-white my-16 "
-        id="testimonial_sec"
-      >
-        <div className="mb-4">
-          <span className="px-6 py-2 bg-custom-gradient text-white font-semibold rounded-full">
-            TESTIMONIAL
-          </span>
-        </div>
-        <h2
-          className="text-3xl md:text-4xl font-semibold mt-6 mb-4 text-center"
-          id="testimonial_heading"
-        >
-          What Clients Are Saying
-        </h2>
-        <p
-          className="text-md md:text-xl lg:max-w-2xl max-w-lg mt-2 text-center text-white px-2"
-          id="testmonial_content"
-        >
-          Hear from our satisfied customers who have experienced the benfit of
-          using our services and what their dreams have become
-        </p>
-        <Service />
+      <section className="bg-gray-200">
+        
+        <Team />
       </section>
+
 
       <PopupForm isOpen={isPopupOpen} onClose={closePopup} />
       <section className="relative">
-        <div className="flex items-center justify-center gap-2 pt-8">
-          <div>
-            <h1 className="text-black lg:text-6xl text-3xl">FAQs</h1>
-          </div>
-        </div>
-        <Faqs />
+
       </section>
       <Footer />
     </main>
