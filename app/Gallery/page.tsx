@@ -110,7 +110,7 @@ export default function Home() {
         {/* Left Content - White Background */}
         <div className="w-full lg:w-1/2 bg-white flex flex-col justify-center p-8 md:p-12 lg:p-16">
           <div className="max-w-lg mx-auto">
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+            <h1 className="uniform-heading-xl uniform-text-primary mb-6">
               The next generation of fire protection and integrated security
             </h1>
             
@@ -125,8 +125,8 @@ export default function Home() {
                   />
                 </div>
                 <div>
-                  <h2 className="text-xl font-bold text-gray-800">Neglecting Fire Safety Measures</h2>
-                  <p className="text-gray-600 mt-1">
+                  <h2 className="uniform-heading-sm uniform-text-secondary">Neglecting Fire Safety Measures</h2>
+                  <p className="uniform-text-base uniform-text-muted mt-1">
                     Avoid costly mistakes with our comprehensive fire safety solutions
                   </p>
                 </div>
@@ -142,8 +142,8 @@ export default function Home() {
                   />
                 </div>
                 <div>
-                  <h2 className="text-xl font-bold text-gray-800">Mitigate Risk Of Life, Property & Offense Of Law</h2>
-                  <p className="text-gray-600 mt-1">
+                  <h2 className="uniform-heading-sm uniform-text-secondary">Mitigate Risk Of Life, Property & Offense Of Law</h2>
+                  <p className="uniform-text-base uniform-text-muted mt-1">
                     Comprehensive protection systems to safeguard what matters most
                   </p>
                 </div>
@@ -153,12 +153,12 @@ export default function Home() {
             <div className="flex flex-wrap gap-4">
               <button
                 onClick={openPopup}
-                className="px-8 py-3 bg-gradient-to-r from-red-700 to-red-900 text-white font-bold rounded-lg hover:opacity-90 transition-opacity duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-transform"
+                className="uniform-button-primary"
               >
                 GET A QUOTE
               </button>
               
-              <button className="px-8 py-3 bg-white border-2 border-gray-300 text-gray-800 font-bold rounded-lg hover:border-red-600 hover:text-red-700 transition-colors duration-300">
+              <button className="uniform-button-secondary">
                 LEARN MORE
               </button>
             </div>
@@ -184,7 +184,7 @@ export default function Home() {
       </section>
     </div>
 
-      <section className="bg-gray-200">
+      <section className="uniform-bg-accent uniform-section">
         
         <Gallery />
       </section>
