@@ -25,7 +25,7 @@ const ConveyorBelt = () => {
   const duplicatedBeltTwo = [...beltTwoItems, ...beltTwoItems, ...beltTwoItems];
 
   return (
-    <div className="relative w-full py-16 bg-gray-100">
+    <div className="relative w-full py-16 ">
       {/* Title Section */}
       <div className="text-center mb-12 px-4">
         <h1 className="text-3xl md:text-5xl font-bold mb-4">
