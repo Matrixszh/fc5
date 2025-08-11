@@ -7,15 +7,12 @@ export const AboutUs = () => {
   return (
     <div className="flex flex-col-reverse lg:flex-row items-center justify-between px-5  lg:px-16 gap-14">
       <div className="flex flex-col gap-6  lg:items-start items-center">
-        <h1 className="flex gap-2 uniform-heading-lg">
-          Meet{" "}
-          <span className="flex flex-col items-center">
-            <p>Abdullah Ghaffar</p>
-            
-          </span>{" "}
+        <h1 className="uniform-heading-lg">
+          <span className="text-red-500">Meet</span>{" "}
+          <span className="text-black">Abdullah Ghaffar</span>
         </h1>
         <p
-          className="uniform-text-lg lg:pr-14 text-justify text-center px-2 tracking-tight"
+          className="uniform-text-lg uniform-text-secondary lg:pr-14 text-justify text-center px-2 tracking-tight"
           style={{ lineHeight: "1.85" }}
         >
           As an accomplished entrepreneur with expertise in leadership and
