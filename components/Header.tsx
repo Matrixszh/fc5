@@ -63,20 +63,20 @@ export const Header = () => {
           }}
         />
         <div className="hidden lg:flex justify-between items-center gap-8 p-8">
-          <p className="text-black font-bold hover:text-[#e20303] cursor-pointer">
+          <p className="uniform-text-secondary font-bold hover:text-[#e20303] cursor-pointer">
             {" "}
             <a href="/">Home</a>
           </p>
-          <p className="text-black font-bold hover:text-[#e20303] cursor-pointer">
+          <p className="uniform-text-secondary font-bold hover:text-[#e20303] cursor-pointer">
             <a href="/AboutUs">About</a>{" "}
           </p>
-          <p className="text-black font-bold hover:text-[#e20303] cursor-pointer">
+          <p className="uniform-text-secondary font-bold hover:text-[#e20303] cursor-pointer">
             <a href="/Services">Services</a>
           </p>
-          <p className="text-black font-bold hover:text-[#e20303] cursor-pointer">
+          <p className="uniform-text-secondary font-bold hover:text-[#e20303] cursor-pointer">
             <a href="/Gallery">Gallery</a>
           </p>
-          <p className="text-black font-bold hover:text-[#e20303] cursor-pointer">
+          <p className="uniform-text-secondary font-bold hover:text-[#e20303] cursor-pointer">
             <a href="/Contact">Contact</a>
           </p>
         </div>
@@ -89,7 +89,7 @@ export const Header = () => {
           aria-expanded={isMenuOpen}
         >
           <span className="sr-only">Toggle menu</span>
-          <RxHamburgerMenu className="w-8 h-8 text-black hover:text-[#e20303]" />
+          <RxHamburgerMenu className="w-8 h-8 uniform-text-secondary hover:text-[#e20303]" />
         </button>
       </header>
       <div
@@ -99,34 +99,34 @@ export const Header = () => {
       >
         <button
           onClick={toggleMenu}
-          className="absolute top-4 right-4 text-black hover:text-[#e20303]"
+          className="absolute top-4 right-4 uniform-text-secondary hover:text-[#e20303]"
           aria-label="Close menu"
         >
           <RxCross1 className="w-8 h-8" />
         </button>
         <div className="flex flex-col  justify-between h-full py-[80px]">
           <div className="flex flex-col gap-8 pl-10">
-            <p className="text-black font-bold hover:text-[#e20303] cursor-pointer mb-4">
+            <p className="uniform-text-secondary font-bold hover:text-[#e20303] cursor-pointer mb-4">
               <a onClick={toggleMenu} href="#about ">
                 About
               </a>
             </p>
-            <p className="text-black font-bold hover:text-[#e20303] cursor-pointer mb-4">
+            <p className="uniform-text-secondary font-bold hover:text-[#e20303] cursor-pointer mb-4">
               <a onClick={toggleMenu} href="#reviews">
                 Reviews
               </a>{" "}
             </p>
-            <p className="text-black font-bold hover:text-[#e20303] cursor-pointer mb-4">
+            <p className="uniform-text-secondary font-bold hover:text-[#e20303] cursor-pointer mb-4">
               <a onClick={toggleMenu} href="#contact">
                 Contact
               </a>
             </p>
-            <p className="text-black font-bold hover:text-[#e20303] cursor-pointer mb-4">
+            <p className="uniform-text-secondary font-bold hover:text-[#e20303] cursor-pointer mb-4">
               <a onClick={toggleMenu} href="#contact">
                 Contact
               </a>
             </p>
-            <p className="text-black font-bold hover:text-[#e20303] cursor-pointer mb-4">
+            <p className="uniform-text-secondary font-bold hover:text-[#e20303] cursor-pointer mb-4">
               <a onClick={toggleMenu} href="#contact">
                 Contact
               </a>
