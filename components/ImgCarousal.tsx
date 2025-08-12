@@ -5,23 +5,23 @@ import Marquee from "react-fast-marquee";
 const ConveyorBelt = () => {
   // Define image data with titles
   const beltOneItems = [
-    { src: "/logo2.png", title: "Fire Prevention Design & Hazard Assessment" },
-    { src: "/logo2.png", title: "Sprinkler Fire Hydrant & Hose Reel Reticulation" },
-    { src: "/logo2.png", title: "Fire Fire Sprinkler & Water Curtain Installations" },
-    { src: "/logo2.png", title: "Fire/Smoke Detection & Alarm Systems" },
-    { src: "/logo2.png", title: "Fire Exit Structural Staircase" },
-    { src: "/logo.png", title: "Security Fire Safety Inpanel Systems" },
-    { src: "/logo.png", title: "Fire Prevention Design & Hazard Assessment" },
+    { src: "/fpd.jpg", title: "Fire Prevention Design & Hazard Assessment" },
+    { src: "/spf2.jpeg", title: "Sprinkler Fire Hydrant & Hose Reel Reticulation" },
+    { src: "/sprink.png", title: "Fire Fire Sprinkler & Water Curtain Installations" },
+    { src: "/firelarm.webp", title: "Fire/Smoke Detection & Alarm Systems" },
+    { src: "/staircase.jpg", title: "Fire Exit Structural Staircase" },
+    { src: "/bgrem.png", title: "Security Fire Safety Inpanel Systems" },
+    { src: "/firesupression.jpg", title: "Fire Prevention Design & Hazard Assessment" },
   ];
 
   const beltTwoItems = [
-    { src: "/logo.png", title: "Fire Extinguishers" },
-    { src: "/logo.png", title: "Gas Flooding Systems" },
-    { src: "/logo.png", title: "Fire Exit signage's & Escape Plans" },
-    { src: "/logo.png", title: "Fire Pumps" },
-    { src: "/logo.png", title: "Public Address System" },
-    { src: "/logo.png", title: "Standalone Systems" },
-    { src: "/logo.png", title: "Fire Dose" },
+    { src: "/firext.png", title: "Fire Extinguishers" },
+    { src: "/gasflooding.webp", title: "Gas Flooding Systems" },
+    { src: "/escapeplan.jpg", title: "Fire Exit signage's & Escape Plans" },
+    { src: "/firepumps.jpg", title: "Fire Pumps" },
+    { src: "/publicadress.jpg", title: "Public Address System" },
+    { src: "/REDIC.png", title: "Standalone Systems" },
+    { src: "/firedose.jpg", title: "Fire Dose" },
   ];
 
   // Triple the items to ensure smooth continuous movement
@@ -55,10 +55,8 @@ const ConveyorBelt = () => {
                     <Image
                       src={item.src}
                       alt={item.title}
-                      width={150}
-                      height={150}
-                      objectFit="contain"
-                      className="p-4"
+                      fill
+                      objectFit="object-cover"
                     />
                   </div>
                   <div className="mt-4 text-center">
@@ -83,10 +81,8 @@ const ConveyorBelt = () => {
                     <Image
                       src={item.src}
                       alt={item.title}
-                      width={150}
-                      height={150}
-                      objectFit="contain"
-                      className="p-4"
+                      fill
+                      objectFit="object-cover"
                     />
                   </div>
                   <div className="mt-4 text-center">
