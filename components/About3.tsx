@@ -130,7 +130,7 @@ export default function MainServices() {
                   ))}
                 </div>
 
-                <Link href="/contact">
+                <Link href="/Contact">
                   <Button
                     variant="outline"
                     className="rounded-full px-8 gap-2 border-2 border-primary-600"
