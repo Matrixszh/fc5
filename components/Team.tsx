@@ -16,9 +16,9 @@ const Team: React.FC = () => {
               quality={100}
               className=" w-[230px] h-[230px] lg:w-[70%] lg:h-[70%] mx-auto object-cover  mb-4"
             />
-            <h3 className="text-xl font-semibold mb-2">Pace Morby</h3>
+            <h3 className="text-xl font-semibold mb-2">Aftab Ahmed</h3>
             <p className="text-gray-600 pb-6">
-               TV Show Host | Author
+              B.E. Civil | Cheif
             </p>
 
           </div>
@@ -33,9 +33,9 @@ const Team: React.FC = () => {
               quality={100}
               className=" w-[230px] h-[230px] lg:w-[70%] lg:h-[70%] mx-auto object-cover  mb-4"
             />
-            <h3 className="text-xl font-semibold mb-2">Jade Jarvis</h3>
+            <h3 className="text-xl font-semibold mb-2">Apoorva Srivastava</h3>
              <p className="text-gray-600 pb-6">
-               TV Show Host | Author
+              B.E. Fire & Safety  | Design Engineer
             </p>
           </div>
 
@@ -49,9 +49,9 @@ const Team: React.FC = () => {
               quality={100}
               className=" w-[230px] h-[230px] lg:w-[70%] lg:h-[70%] mx-auto object-cover  mb-4"
             />
-            <h3 className="text-xl font-semibold mb-2">Heather Kiddoo</h3>
+            <h3 className="text-xl font-semibold mb-2">Shiraz Shaikh</h3>
              <p className="text-gray-600 pb-6">
-               TV Show Host | Author
+               M.Tech(Mech), CWI(UK) | Project Engineer
             </p>
           </div>
           {/* Card 4 */}
@@ -64,9 +64,9 @@ const Team: React.FC = () => {
               quality={100}
               className=" w-[230px] h-[230px] lg:w-[70%] lg:h-[70%] mx-auto object-cover mb-4"
             />
-            <h3 className="text-xl font-semibold mb-2">Nathan Barnes</h3>
+            <h3 className="text-xl font-semibold mb-2">Kushal Chary Cingaram</h3>
              <p className="text-gray-600 pb-6">
-               TV Show Host | Author
+              M.Tech(Mech) | Project Engineer
             </p>
           </div>
         </div>

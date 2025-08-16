@@ -187,7 +187,7 @@ export default function Home() {
           What Makes Us<span className="text-red-500"> Different</span>
         </h2>
         <p className="text-gray-800 max-w-2xl mx-auto text-lg">
-          Discover how our financing solutions have transformed investment journeys
+          With over two decades of expertise, CROSSFIRE has earned a trusted name in fire safety. From technical consultancy to end-to-end protection systems, we ensure compliance with national and international standards—delivering safety without compromise.
         </p>
       </div>
         

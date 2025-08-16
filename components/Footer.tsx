@@ -17,16 +17,16 @@ export const Footer = () => {
         <div className="sm:flex sm:items-center sm:justify-between ">
           <a
             href="#"
-            className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"
+            className="flex justify-center items-center mb-4 sm:mb- space-x-3 rtl:space-x-reverse"
           >
             <Image
               src={logo2}
               alt="logo"
-              className="w-[100px] lg:w-[150px]"
+              className=" justify-center items-center w-[400px] lg:w-[450px]"
               quality={100}
             />
           </a>
-          <ul className="flex  items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
+          <ul className="flex justify-center items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
             <li>
               <a href="#about" className="hover:underline me-4 md:me-6">
                 About
@@ -57,7 +57,7 @@ export const Footer = () => {
             </p>
           </div>
         </div>
-        <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400">
+        <span className="block  text-sm text-gray-500 sm:text-center dark:text-gray-400">
           © 2024{" "}
           <a href="#" className="hover:underline">
             ™

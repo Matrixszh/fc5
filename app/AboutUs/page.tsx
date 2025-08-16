@@ -247,7 +247,7 @@ const Stats = [
           What We<span className="text-red-500"> Do</span>
         </h2>
         <p className="text-gray-800 max-w-2xl mx-auto text-lg">
-          Discover how our financing solutions have transformed investment journeys
+          Our Journey To be the most trusted and respected fire safety partner in India, delivering innovative, compliant, and reliable protection systems that safeguard lives and property across all sectors.
         </p>
       </div>
         <About3 />
@@ -258,7 +258,7 @@ const Stats = [
           Our<span className="text-red-500"> Team</span>
         </h2>
         <p className="text-gray-800 max-w-2xl mx-auto text-lg">
-          Discover how our financing solutions have transformed investment journeys
+         Our fundamental beliefs that guide our actions, unite our teams, and define our brand.
         </p>
       </div>
         <Team />

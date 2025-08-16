@@ -78,10 +78,10 @@ const Testimonials = () => {
       {/* Title Section */}
       <div className="text-center mb-16">
         <h2 className="text-4xl md:text-5xl font-bold mb-4 text-black">
-          Client <span className="text-red-500">Success Stories</span>
+          To Whom Do We <span className="text-red-500">Cater</span>
         </h2>
         <p className="text-gray-800 max-w-2xl mx-auto text-lg">
-          Discover how our financing solutions have transformed investment journeys
+         Discover our range of fire safety solutions, from residential protection to industrial-grade systems, designed to safeguard lives and property while ensuring full compliance and peace of mind.
         </p>
       </div>
       

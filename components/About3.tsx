@@ -53,41 +53,32 @@ export default function MainServices() {
       ],
     },
     {
-      title: "Fire Hydrant Systems",
+      title: "Our Domain Expertise",
       icon: <FlameKindling className="h-8 w-8 text-white" />,
-      description: "Complete installation and maintenance of fire hydrant systems",
+      description: "CROSSFIRE is rendering consultancy services for different types of projects such as:",
       features: [
-        "Hydrant Valves",
-        "Hose Boxes",
-        "Hose Pipes",
-        "Branch Pipes",
-        "Regular Maintenance",
+        "Industries",
+        "Health Care",
+        "Residential",
+        "Commercial",
+        "IT Buildings",
+        "Institutions",
+        "Hotels",
       ],
     },
     {
-      title: "Automatic Sprinkler Systems",
+      title: "What We Offer",
       icon: <Sparkles className="h-8 w-8 text-white" />,
-      description: "Effective sprinkler systems for automatic fire suppression",
+      description: "Later on only to achieve job satisfaction considering business ethics we started",
       features: [
-        "Design & Installation",
-        "Various Types of Sprinklers",
-        "Control Valve Assemblies",
-        "Maintenance & Testing",
-        "Code Compliance",
+        "Instrumentation of Fire Fighting Equipments",
+        "Contracting & Maintenance",
+        "Supply of Fire Extinguishers",
+        "Manufacturing of Fire Exit Signage’s",
+        "Fire Fighting Training",
       ],
     },
-    {
-      title: "Fire Detection Systems",
-      icon: <AreaChart className="h-8 w-8 text-white" />,
-      description: "Advanced fire detection systems for early warning",
-      features: [
-        "Smoke & Heat Detectors",
-        "Manual Call Points",
-        "Hooters & Alarm Panels",
-        "Addressable Fire Alarm Panels",
-        "System Integration",
-      ],
-    },
+  
   ];
 
   return (

@@ -1,25 +1,31 @@
 "use client";
 import React from "react";
 import { SpecialityStore } from "./ui/SpecialityStore";
-import Image from "next/image";
+import { FaClock, FaCogs, FaMapMarkerAlt } from "react-icons/fa";
 import {
   Card,
   CardContent,
-  CardDescription,
   CardFooter,
   CardHeader,
   CardTitle,
 } from "./ui/card";
 
 export const SpecialityComponent = () => {
-  // Use Pullstate hook to access store
   const selectedButton = SpecialityStore.useState((s) => s.selectedButton);
   const buttonData = SpecialityStore.useState((s) => s.buttonData);
+
+  const IconComponents = {
+    Experience: FaClock,
+    Comprehensive: FaCogs,
+    Presence: FaMapMarkerAlt
+  };
+
+  const IconComponent = IconComponents[selectedButton];
 
   return (
     <div className="flex flex-col items-center justify-center w-full gap-10 py-16">
       <div className="lg:w-[40vw]  w-[80vw] rounded-full bg-black bg-opacity-10 flex justify-evenly">
-        {(["Trust", "Volume", "Bespoke"] as const).map((button) => (
+        {(["Experience", "Comprehensive", "Presence"] as const).map((button) => (
           <button
             key={button}
             className={`w-1/3 py-2 rounded-full ${
@@ -28,7 +34,6 @@ export const SpecialityComponent = () => {
                 : "bg-transparent hover:text-red-500"
             }`}
             onClick={() => {
-              // Update store state
               SpecialityStore.update((state) => {
                 state.selectedButton = button;
               });
@@ -53,15 +58,8 @@ export const SpecialityComponent = () => {
               </p>
             </CardContent>
           </div>
-          <div>
-            <Image
-              src={buttonData[selectedButton].image}
-              alt="pic"
-              width={300}
-              height={300}
-              quality={100}
-              className="md:w-[40vw] w-[80vw] lg:h-[22vw]"
-            />
+          <div className="md:w-[40vw] w-[80vw] flex justify-center items-center">
+            <IconComponent className="text-red-500 md:text-[15vw] text-[30vw]" />
           </div>
         </Card>
       </div>
