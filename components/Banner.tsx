@@ -8,7 +8,7 @@ const Banner = () => {
         <div className="font-semibold text-gray-800">
         25 Years Of Altruism
         </div>
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 pl-10">
           <span className="font-medium text-gray-800">
             Request Your Free Estimate
           </span>
