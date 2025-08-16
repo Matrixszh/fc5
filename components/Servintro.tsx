@@ -14,9 +14,7 @@ const PodcastIntro = () => {
 
           {/* Description Text */}
           <p className="text-gray-800 text-lg md:text-base mb-8 max-w-3xl text-justify md:text-center">
-            Join <strong>Abdullah Ghaffar</strong> as he engages with the brightest minds in the real estate 
-            industry! Discover actionable tips, inspiring stories, and insider knowledge from top performers 
-            and experts in real estate investing and raising capital.
+            Our mission is to provide multidisciplinary fire safety solutions through technical expertise, practical implementation, and adherence to national and international standards. We are committed to excellence, integrity, and building long-term trust by delivering every project with quality, compliance, and zero conflict.
           </p>
 
 

@@ -7,33 +7,33 @@ import Banner from "@/components/Banner"; // Import the Banner component
 const openSans = Open_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Xcellent Tires",
-  description: "At Xcellent Auto Repair, we believe in providing reliable, honest, and transparent services. Our state-of-the-art facility is equipped with the latest technology to diagnose and repair your vehicle efficiently and accurately. Whether you need routine maintenance, complex repairs, or specialized services, we have the expertise to handle it all.",
+  title: "CrossFire",
+  description: "The next generation of fire protection and integrated security",
   icons: {
-    icon: "https://xcellent.vercel.app/_next/static/media/logo2.3b0c3326.png",
+    icon: "https://fc5.vercel.app/_next/static/media/logo2.98b14312.png",
   },
   openGraph: {
-    title: "Xcellent Tires",
-    description: "Reliable, honest, and transparent auto repair services with state-of-the-art technology.",
+    title: "CrossFire",
+    description: "The next generation of fire protection and integrated security",
     images: [
       {
-        url: "https://xcellent.vercel.app/_next/static/media/logo2.3b0c3326.png",
+        url: "https://fc5.vercel.app/_next/static/media/logo2.98b14312.png",
         width: 1200,
         height: 630,
         alt: "Xcellent Tires Logo",
       },
     ],
-    url: "https://xcellent.vercel.app/_next/static/media/logo2.3b0c3326.png",
-    siteName: "Xcellent Tires",
+    url: "https://fc5.vercel.app/_next/static/media/logo2.98b14312.png",
+    siteName: "CrossFire",
     locale: "en_US",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Xcellent Tires",
-    description: "Reliable, honest, and transparent auto repair services with state-of-the-art technology.",
+    title: "CrossFire",
+    description: "The next generation of fire protection and integrated security",
     images: [
-      "https://xcellent.vercel.app/_next/static/media/logo2.3b0c3326.png",
+      "https://fc5.vercel.app/_next/static/media/logo2.98b14312.png",
     ],
   },
   metadataBase: new URL("https://xcellenttires.com"),
