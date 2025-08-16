@@ -246,7 +246,7 @@ const Stats = [
         <h2 className="text-3xl md:text-5xl font-bold mb-4 text-black">
           What We<span className="text-red-500"> Do</span>
         </h2>
-        <p className="text-gray-800 max-w-2xl mx-auto text-lg">
+        <p className="text-gray-800 max-w-2xl mx-auto text-lg px-8">
           Our Journey To be the most trusted and respected fire safety partner in India, delivering innovative, compliant, and reliable protection systems that safeguard lives and property across all sectors.
         </p>
       </div>
@@ -257,7 +257,7 @@ const Stats = [
         <h2 className="text-3xl md:text-5xl font-bold mb-4 text-black">
           Our<span className="text-red-500"> Team</span>
         </h2>
-        <p className="text-gray-800 max-w-2xl mx-auto text-lg">
+        <p className="text-gray-800 max-w-2xl mx-auto text-lg px-8">
          Our fundamental beliefs that guide our actions, unite our teams, and define our brand.
         </p>
       </div>

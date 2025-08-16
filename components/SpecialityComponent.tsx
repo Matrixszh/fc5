@@ -16,7 +16,7 @@ export const SpecialityComponent = () => {
 
   const IconComponents = {
     Experience: FaClock,
-    Comprehensive: FaCogs,
+    Variety: FaCogs,
     Presence: FaMapMarkerAlt
   };
 
@@ -24,8 +24,8 @@ export const SpecialityComponent = () => {
 
   return (
     <div className="flex flex-col items-center justify-center w-full gap-10 py-16">
-      <div className="lg:w-[40vw]  w-[80vw] rounded-full bg-black bg-opacity-10 flex justify-evenly">
-        {(["Experience", "Comprehensive", "Presence"] as const).map((button) => (
+      <div className="lg:w-[40vw] w-[80vw] text-sm rounded-full bg-black bg-opacity-10 flex justify-evenly">
+        {(["Experience", "Variety", "Presence"] as const).map((button) => (
           <button
             key={button}
             className={`w-1/3 py-2 rounded-full ${

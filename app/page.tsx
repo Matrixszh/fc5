@@ -186,7 +186,7 @@ export default function Home() {
         <h2 className="text-3xl md:text-5xl font-bold mb-4 text-black">
           What Makes Us<span className="text-red-500"> Different</span>
         </h2>
-        <p className="text-gray-800 max-w-2xl mx-auto text-lg">
+        <p className="text-gray-800 max-w-2xl mx-auto text-lg px-8">
           With over two decades of expertise, CROSSFIRE has earned a trusted name in fire safety. From technical consultancy to end-to-end protection systems, we ensure compliance with national and international standards—delivering safety without compromise.
         </p>
       </div>
