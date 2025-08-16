@@ -9,18 +9,15 @@ export const AboutUs = () => {
       <div className="flex flex-col gap-6  lg:items-start items-center">
         <h1 className="uniform-heading-lg">
           <span className="text-red-500">Meet</span>{" "}
-          <span className="text-black">Abdullah Ghaffar</span>
+          <span className="text-black">CrossFire</span>
         </h1>
         <p
           className="uniform-text-lg uniform-text-secondary lg:pr-14 text-justify text-center px-2 tracking-tight"
           style={{ lineHeight: "1.85" }}
         >
-          As an accomplished entrepreneur with expertise in leadership and
-          business development, I have played a key role in effectively overseen
-          projects that generated over $20 million in revenue. At this
-          particular stage, my proficient team is dedicated to exploring new
-          markets, uncovering new growth opportunities, and driving strategies
-          to grow and retain our customer base.
+          Established in 2000, CROSSFIRE is a multidisciplinary fire safety consultancy and service provider based in Hyderabad. Our team of experienced professionals combines technical expertise with practical knowledge to deliver reliable fire protection systems that adhere to the highest safety standards.
+
+We follow Indian and international fire safety codes such as BIS Standards, NBC of India, and Local Fire Department Regulations to ensure comprehensive protection for all types of buildings and facilities.
         </p>
       </div>
       <div className="">

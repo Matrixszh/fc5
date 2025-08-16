@@ -107,27 +107,27 @@ export const Header = () => {
         <div className="flex flex-col  justify-between h-full py-[80px]">
           <div className="flex flex-col gap-8 pl-10">
             <p className="uniform-text-secondary font-bold hover:text-[#e20303] cursor-pointer mb-4">
-              <a onClick={toggleMenu} href="#about ">
-                About
+              <a onClick={toggleMenu} href="/ ">
+                Home
               </a>
             </p>
             <p className="uniform-text-secondary font-bold hover:text-[#e20303] cursor-pointer mb-4">
-              <a onClick={toggleMenu} href="#reviews">
-                Reviews
+              <a onClick={toggleMenu} href="/AboutUs">
+                About
               </a>{" "}
             </p>
             <p className="uniform-text-secondary font-bold hover:text-[#e20303] cursor-pointer mb-4">
-              <a onClick={toggleMenu} href="#contact">
-                Contact
+              <a onClick={toggleMenu} href="/Services">
+                Services
               </a>
             </p>
             <p className="uniform-text-secondary font-bold hover:text-[#e20303] cursor-pointer mb-4">
-              <a onClick={toggleMenu} href="#contact">
-                Contact
+              <a onClick={toggleMenu} href="/Gallery">
+                Gallery
               </a>
             </p>
             <p className="uniform-text-secondary font-bold hover:text-[#e20303] cursor-pointer mb-4">
-              <a onClick={toggleMenu} href="#contact">
+              <a onClick={toggleMenu} href="/Contact">
                 Contact
               </a>
             </p>

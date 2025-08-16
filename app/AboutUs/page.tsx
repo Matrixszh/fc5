@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import { FaProjectDiagram, FaCalendarAlt, FaMapMarkerAlt } from 'react-icons/fa';
 import bg_img from "../../public/bgimg3.jpg";
 import bg_img2 from "../public/bg_img2.jpeg";
 import bg_img3 from "../public/bg_img3.jpeg";
@@ -70,6 +71,28 @@ export default function Home() {
     triggerOnce: true,
     threshold: 0.1,
   });
+const Stats = [
+  {
+    icon: FaProjectDiagram,
+    count: 50,           // Changed from "50+" to 50
+    suffix: "+",         // Added suffix property
+    title: "Projects"
+  },
+  {
+    icon: FaCalendarAlt,
+    count: 25,           // Changed from "25" to 25
+    suffix: "",          // No suffix needed
+    title: "Years of Experience"
+  },
+  {
+    icon: FaMapMarkerAlt,
+    count: 4,            // Changed from "4" to 4
+    suffix: "",          // No suffix needed
+    title: "Locations"
+  }
+];
+
+
   return (
     <main>
       
@@ -178,38 +201,42 @@ export default function Home() {
       </section>
     </div>
           <section
-        className="uniform-bg-secondary uniform-section flex flex-col"
-        ref={ref}
-      >
-        <div className="flex items-center justify-center gap-2 pt-20">
+  className="uniform-bg-secondary uniform-section flex flex-col"
+  ref={ref}
+>
+  <div className="flex items-center justify-center gap-2 pt-20">
+  </div>
+  <div className="grid grid-cols-1 lg:grid-cols-3 px-[5.313vw]">
+    {Stats.map((data, index) => {
+      const IconComponent = data.icon;
+      return (
+        <div key={index} className="flex flex-col items-center gap-6 py-3">
+          <IconComponent 
+            className="w-12 h-12 lg:w-28 lg:h-28 md:w-24 md:h-24 text-red-500"
+          />
+          <CountUp
+            start={0}
+            end={data.count}
+            delay={0}
+            duration={3.0}
+            useEasing={true}
+            key={inView ? 1 : 0}
+          >
+            {({ countUpRef }) => (
+              <h1 className="uniform-text-primary md:text-5xl text-4xl font-bold">
+                <span ref={countUpRef} />
+                {data.suffix}
+              </h1>
+            )}
+          </CountUp>
+          <p className="uniform-text-secondary">{data.title}</p>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-3 px-[5.313vw]">
-          {Stats.map((data, index) => (
-            <div key={index} className="flex flex-col items-center gap-6 py-3">
-              <Image
-                src={data.img}
-                alt="img"
-                className="w-12 h-12 lg:w-28 lg:h-28 md:w-24 md:h-24"
-              />
-              <CountUp
-                start={0}
-                end={data.count}
-                delay={0}
-                duration={3.0}
-                useEasing={true}
-                key={inView ? 1 : 0}
-              >
-                {({ countUpRef }) => (
-                  <h1 className="uniform-text-primary md:text-5xl text-4xl font-bold">
-                    <span ref={countUpRef} />
-                  </h1>
-                )}
-              </CountUp>
-              <p className="uniform-text-secondary">{data.title}</p>
-            </div>
-          ))}
-        </div>
-      </section>
+      );
+    })}
+  </div>
+</section>
+
+
       <section className="uniform-section uniform-container">
         
         <AboutUs />

@@ -39,13 +39,17 @@ export default function MainServices() {
     {
       title: "Consulting Services",
       icon: <Shield className="h-8 w-8 text-white" />,
-      description: "Expert fire safety consulting for all types of buildings and facilities",
+      description: "CROSSFIRE Fire Protection Engineers, Consultants was established in Year 2000 as Core Fire Safety Engineers.Our consultancy organization with special focus on",
       features: [
         "Fire Prevention Designs",
         "Fire Hazard Assessment Reports",
-        "Planning, Estimating, Commissioning",
+        "Survey & Preparation of Reports",
+        "Initial Planning, Consulting & Cost Estimating",
+        "Preparation of Fabrication/installation Plans",
+        "Project Management",
+        "Administration & Commissioning",
         "Fire Escape Plans",
-        "Evacuation Drills",
+        "Fire Evacuation Drills",
       ],
     },
     {

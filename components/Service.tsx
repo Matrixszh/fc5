@@ -6,68 +6,60 @@ import ReactCardFlip from "react-card-flip";
 const Testimonials = () => {
   const testimonials = [
     {
-      title: "Rehab Loan",
+      title: "Residential Apartment & Highrise Building",
       description: "Quick funding for property renovation.",
       backDescription:
         "I found a distressed property in a prime location, but I lacked the funds for renovation. Creative Funding for help, and they provided me with a Rehab Loan that covered both the purchase and the renovation.",
       badge: "Adam M",
-      image: "/bg_img.jpg",
+      image: "/resid.jpeg",
     },
     {
-      title: "DCSR Loan",
+      title: "Commercial Complexes",
       description: "Fast, flexible financing for rentals.",
       backDescription:
         "I wanted to expand my rental portfolio and needed a reliable financing option. Creative Funding offered me a DSCR Rental Loan, which enabled me to purchase a new rental property. The loan terms were flexible, and the approval process was fast.",
       badge: "Karl T",
-      image: "/bg_img.jpg",
+      image: "/mall.jpg",
     },
     {
-      title: "Rehab Loan",
+      title: "Hotels/Restaurants",
       description: "Financed renovations for community revitalization.",
       backDescription:
         "I purchased an old, run-down property with the vision of revitalizing it and improving the local community. With a Rehab Loan, I was able to finance extensive renovations.",
       badge: "Maria S",
-      image: "/bg_img.jpg",
+      image: "/hotels.jpg",
     },
     {
-      title: "Bridge Loan",
+      title: "Schools & Educational Buildings",
       description: "Immediate funding for prime opportunity",
       backDescription:
         "When I came across a prime investment opportunity, I knew I had to act fast. However, my capital was tied up in another property that hadn't sold yet. Creative Funding came through with a Bridge Loan that gave me the immediate funds I needed.",
       badge: "Michael W",
-      image: "/bg_img.jpg",
+      image: "/schools.jpg",
     },
         {
-      title: "Rehab Loan",
+      title: "Hospitals",
       description: "Financed renovations for community revitalization.",
       backDescription:
         "I purchased an old, run-down property with the vision of revitalizing it and improving the local community. With a Rehab Loan, I was able to finance extensive renovations.",
       badge: "Maria S",
-      image: "/bg_img.jpg",
+      image: "/hosptial.jpg",
     },
     {
-      title: "Bridge Loan",
+      title: "Industries",
       description: "Immediate funding for prime opportunity",
       backDescription:
         "When I came across a prime investment opportunity, I knew I had to act fast. However, my capital was tied up in another property that hadn't sold yet. Creative Funding came through with a Bridge Loan that gave me the immediate funds I needed.",
       badge: "Michael W",
-      image: "/bg_img.jpg",
+      image: "/industries.png",
     },
             {
-      title: "Rehab Loan",
+      title: "Power Plant",
       description: "Financed renovations for community revitalization.",
       backDescription:
         "I purchased an old, run-down property with the vision of revitalizing it and improving the local community. With a Rehab Loan, I was able to finance extensive renovations.",
       badge: "Maria S",
-      image: "/bg_img.jpg",
-    },
-    {
-      title: "Bridge Loan",
-      description: "Immediate funding for prime opportunity",
-      backDescription:
-        "When I came across a prime investment opportunity, I knew I had to act fast. However, my capital was tied up in another property that hadn't sold yet. Creative Funding came through with a Bridge Loan that gave me the immediate funds I needed.",
-      badge: "Michael W",
-      image: "/bg_img.jpg",
+      image: "/powerplant3.jpg",
     },
   ];
 
