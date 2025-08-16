@@ -95,8 +95,8 @@ export default function Home() {
         {/* Left Content - White Background */}
         <div className="w-full lg:w-1/2 bg-white flex flex-col justify-center p-8 md:p-12 lg:p-16">
           <div className="max-w-lg mx-auto">
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-              The next generation of fire protection and integrated security
+            <h1 className="uniform-heading-xl mb-6">
+              <span className="text-red-500">Our</span> <span className="text-black">Services</span>
             </h1>
             
             <div className="space-y-6 mb-10">
