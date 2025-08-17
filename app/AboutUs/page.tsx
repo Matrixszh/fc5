@@ -265,7 +265,6 @@ const Stats = [
       </section>
 
 
-      <PopupForm isOpen={isPopupOpen} onClose={closePopup} />
       <section className="relative">
 
       </section>

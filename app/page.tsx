@@ -201,7 +201,6 @@ export default function Home() {
         <Service />
       </section>
 
-      <PopupForm isOpen={isPopupOpen} onClose={closePopup} />
       <section className="relative">
         <div className="flex items-center justify-center gap-2 pt-8">
           <div>

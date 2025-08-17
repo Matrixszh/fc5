@@ -7,6 +7,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { RxCross1 } from "react-icons/rx";
 import PopupForm from "@/components/PopupForm";
 import { useRouter } from "next/navigation";
+import { href } from "react-router-dom";
 
 export const Header = () => {
   const router = useRouter();
@@ -133,19 +134,10 @@ export const Header = () => {
             </p>
           </div>
           <div className="flex justify-center">
-            <button
-              onClick={toggleMenu}
-              className="relative overflow-hidden group p-3 rounded-[10px] text-white font-bold border-2 border-transparent hover:border-[#9E0506] transition-colors duration-300 mt-4"
-            >
-              <span onClick={openPopup} className="relative z-10">
-                BOOK AN APPOINTMENT
-              </span>
-              <div className="absolute inset-0 bg-[linear-gradient(93deg,#E60404_0.45%,#800202_74.27%,#850202_99.52%,#820202_99.53%)] group-hover:opacity-0 transition-opacity duration-300"></div>
-            </button>
+            
           </div>
         </div>
       </div>
-      <PopupForm isOpen={isPopupOpen} onClose={closePopup} />
     </>
   );
 };

@@ -178,7 +178,6 @@ export default function Home() {
       </section>
 
 
-      <PopupForm isOpen={isPopupOpen} onClose={closePopup} />
       <section className="relative">
 
       </section>

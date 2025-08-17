@@ -36,6 +36,7 @@ import Team from "@/components/Team";
 import Service2 from "@/components/Service2";
 import Certifications from "@/components/Certifications";
 import Gallery from "@/components/Gallery";
+import Link from "next/link";
 
 export default function Home() {
   const [scrolled, setIsScrolled] = useState(false);
@@ -150,17 +151,13 @@ export default function Home() {
               </div>
             </div>
             
-            <div className="flex flex-wrap gap-4">
-              <button
-                onClick={openPopup}
-                className="uniform-button-primary"
-              >
-                GET A QUOTE
+            <div className="flex flex-wrap justify-center jusitfy gap-4">
+             
+           <Link href="/Contact">
+              <button className="text-sm mt-4 px-4 py-2 rounded-full border border-red-500 text-red-500 font-medium hover:bg-red-500 hover:text-white transition">
+                Contact Us
               </button>
-              
-              <button className="uniform-button-secondary">
-                LEARN MORE
-              </button>
+            </Link>
             </div>
           </div>
         </div>
@@ -184,7 +181,7 @@ export default function Home() {
       </section>
     </div>
 
-      <section className="uniform-bg-accent uniform-section">
+      <section className="pb-10">
         
         <Gallery />
       </section>

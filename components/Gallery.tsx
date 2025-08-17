@@ -48,7 +48,7 @@ export default function Gallery() {
   ];
 
   return (
-    <section className="uniform-section uniform-bg-primary" ref={galleryRef}>
+    <section className="bg-gray-100 pt-10" ref={galleryRef}>
       <div className="uniform-container">
         <h2 className="uniform-heading-lg mb-12 text-center">
           <span className="text-red-500">Project</span> <span className="text-black">Gallery</span>
