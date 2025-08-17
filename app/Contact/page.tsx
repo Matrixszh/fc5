@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import bg_img from "../../public/bgimg5.jpg";
+import bg_img from "../../public/bgimg6.png";
 import logo from "../../public/logo.png";
 import React, { useState, useEffect } from "react";
 import { Header } from "@/components/Header";

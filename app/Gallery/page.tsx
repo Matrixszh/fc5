@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import bg_img from "../../public/bg_img.jpg";
+import bg_img from "../../public/bgimg5.jpg";
 import bg_img2 from "../public/bg_img2.jpeg";
 import bg_img3 from "../public/bg_img3.jpeg";
 import forward from "../public/Forward.png";

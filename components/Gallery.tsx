@@ -34,12 +34,17 @@ export default function Gallery() {
 
   // Replace these URLs with your actual images later
   const images = [
-    { src: "https://picsum.photos/id/1018/500/500" },
-    { src: "https://picsum.photos/id/1025/500/500" },
-    { src: "https://picsum.photos/id/1031/500/500" },
-    { src: "https://picsum.photos/id/1040/500/500" },
-    { src: "https://picsum.photos/id/1050/500/500" },
-    { src: "https://picsum.photos/id/1062/500/500" },
+    { src: "/fci1.png" },
+    { src: "/fci2.png" },
+    { src: "/fci3.png" },
+    { src: "/fci4.png" },
+    { src: "/fci5.png" },
+    { src: "/fci6.png" },
+    { src: "/fci7.png" },
+    { src: "/fci8.png" },
+    { src: "/fci9.png" },
+    { src: "/fci10.png" },
+    { src: "/fci11.png" },
   ];
 
   return (
@@ -49,7 +54,7 @@ export default function Gallery() {
           <span className="text-red-500">Project</span> <span className="text-black">Gallery</span>
         </h2>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 gap-4">
           {images.map((img, idx) => (
             <div
               key={idx}
