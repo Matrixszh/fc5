@@ -78,6 +78,9 @@ export const Header = () => {
             <a href="/Gallery">Gallery</a>
           </p>
           <p className="uniform-text-secondary font-bold hover:text-[#e20303] cursor-pointer">
+            <a href="/Clients">Clients</a>
+          </p>
+          <p className="uniform-text-secondary font-bold hover:text-[#e20303] cursor-pointer">
             <a href="/Contact">Contact</a>
           </p>
         </div>
@@ -125,6 +128,11 @@ export const Header = () => {
             <p className="uniform-text-secondary font-bold hover:text-[#e20303] cursor-pointer mb-4">
               <a onClick={toggleMenu} href="/Gallery">
                 Gallery
+              </a>
+            </p>
+            <p className="uniform-text-secondary font-bold hover:text-[#e20303] cursor-pointer mb-4">
+              <a onClick={toggleMenu} href="/Clients">
+                Clients
               </a>
             </p>
             <p className="uniform-text-secondary font-bold hover:text-[#e20303] cursor-pointer mb-4">

@@ -1,27 +1,11 @@
 "use client";
 import Image from "next/image";
-import bg_img from "../../public/bgimg5.jpg";
-import bg_img2 from "../public/bg_img2.jpeg";
-import bg_img3 from "../public/bg_img3.jpeg";
-import forward from "../public/Forward.png";
-import car_small from "../public/car_small.png";
-import car_large from "../public/car_large.png";
-import car from "../public/car.png";
-import car_new from "../public/car_new.png";
-import car_new2 from "../public/car_new2.png";
-import car2 from "../public/car2.png";
+import bg_img from "../../public/bgimg4.jpg";
 import logo from "../../public/logo.png";
 import React, { useState, useEffect } from "react";
 import { Header } from "@/components/Header";
 import Service from "@/components/Service";
-import about from "../public/about.png";
-import { About_data } from "@/components/Data/About_Data";
-import { Stats } from "@/components/Data/We_Are_Data";
-import Reviews from "@/components/Reviews";
-import Brands from "@/components/Brands";
 import PopupForm from "@/components/PopupForm";
-import Faqs from "@/components/Faqs";
-import CountUp from "react-countup";
 import { Footer } from "@/components/Footer";
 import ImgCarousal  from "@/components/ImgCarousal";
 import { useInView } from "react-intersection-observer";
@@ -30,12 +14,12 @@ import Intro from "@/components/Intro";
 import { Carousel } from "@/components/ui/carousel";
 import { SpecialityComponent } from "@/components/SpecialityComponent";
 import { AboutUs } from "@/components/About";
-import About3 from "@/components/About3";
+import Clientale from "@/components/Clintale";
 import Teams from "@/components/Team";
 import Team from "@/components/Team";
 import Service2 from "@/components/Service2";
 import Certifications from "@/components/Certifications";
-import Gallery from "@/components/Gallery";
+import Servintro from "@/components/Servintro";
 import Link from "next/link";
 
 export default function Home() {
@@ -112,7 +96,7 @@ export default function Home() {
         <div className="w-full lg:w-1/2 bg-white flex flex-col justify-center p-8 md:p-12 lg:p-16">
           <div className="max-w-lg mx-auto">
             <h1 className="uniform-heading-xl mb-6">
-              <span className="text-red-500">Project</span> <span className="text-black">Gallery</span>
+              <span className="text-red-500">Our</span> <span className="text-black">Clients</span>
             </h1>
             
             <div className="space-y-6 mb-10">
@@ -126,9 +110,9 @@ export default function Home() {
                   />
                 </div>
                 <div>
-                  <h2 className="uniform-heading-sm uniform-text-secondary">Our Completed Projects</h2>
-                  <p className="uniform-text-base uniform-text-muted mt-1">
-                    View our portfolio of successful fire safety installations
+                  <h2 className="text-xl font-bold text-gray-800">Neglecting Fire Safety Measures</h2>
+                  <p className="text-gray-600 mt-1">
+                    Avoid costly mistakes with our comprehensive fire safety solutions
                   </p>
                 </div>
               </div>
@@ -143,9 +127,9 @@ export default function Home() {
                   />
                 </div>
                 <div>
-                  <h2 className="uniform-heading-sm uniform-text-secondary">Quality Workmanship</h2>
-                  <p className="uniform-text-base uniform-text-muted mt-1">
-                    See the quality and precision of our professional installations
+                  <h2 className="text-xl font-bold text-gray-800">Mitigate Risk Of Life, Property & Offense Of Law</h2>
+                  <p className="text-gray-600 mt-1">
+                    Comprehensive protection systems to safeguard what matters most
                   </p>
                 </div>
               </div>
@@ -180,12 +164,11 @@ export default function Home() {
         </div>
       </section>
     </div>
-
-      <section className="pb-10">
+        <section className=" pb-10">
         
-        <Gallery />
+        <Clientale />
       </section>
-
+     
 
 
       <section className="relative">
